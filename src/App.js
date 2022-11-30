@@ -12,7 +12,7 @@ import ProductsAdminPage from "./pages/admin/ProductsAdminPage";
 function App() {
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth")); // default value comes from localStorage
 
-    // variable holding all private routes including the nav bar
+    // variable to store all private routes including the nav bar
     const privateRoutes = (
         <>
             <NavAdmin setAuth={setIsAuth} />
@@ -25,7 +25,7 @@ function App() {
         </>
     );
 
-    // variable holding all public routes without nav bar
+    // variable to store all all public routes without nav bar
     const publicRoutes = (
         <>
             <Nav />
