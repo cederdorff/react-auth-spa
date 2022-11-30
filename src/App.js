@@ -1,13 +1,13 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import Nav from "./components/Nav";
-import ContactPage from "./pages/ContactPage";
 import { useState } from "react";
-import SignInPage from "./pages/SignInPage";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav";
 import NavAdmin from "./components/NavAdmin";
+import AboutPage from "./pages/AboutPage";
 import Dashboard from "./pages/admin/Dashboard";
 import ProductsAdminPage from "./pages/admin/ProductsAdminPage";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
+import SignInPage from "./pages/SignInPage";
 
 function App() {
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth")); // default value comes from localStorage
